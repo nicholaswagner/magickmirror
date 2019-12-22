@@ -129,17 +129,22 @@ CastPlayer.prototype.initializeCastPlayer = function () {
  */
 
 CastPlayer.prototype.switchPlayer = function () {
+    console.log('--1');
     this.stopProgressTimer();
     this.resetVolumeSlider();
     this.playerHandler.stop();
     this.playerState = PLAYER_STATE.IDLE;
     if (cast && cast.framework) {
+        console.log('--2');
         if (this.remotePlayer.isConnected) {
+            console.log('--3');
             this.setupRemotePlayer();
             return;
         }
     }
+    console.log('--4');
     this.setupLocalPlayer();
+    console.log('--5');
 };
 
 /**
