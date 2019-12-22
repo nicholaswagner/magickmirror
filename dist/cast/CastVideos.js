@@ -21,7 +21,7 @@
  * @const
  */
 var MEDIA_SOURCE_ROOT =
-    'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/';
+    'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/';
 
 /**
  * Width of progress bar in pixel
